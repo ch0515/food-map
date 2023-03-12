@@ -41,3 +41,14 @@ const dataSet = [
 	  category: "일식",
 	},
   ];
+
+  // 주소-좌표 변환 객체를 생성합니다
+	var geocoder = new kakao.maps.services.Geocoder();
+
+  for (var i = 0; i < dataSet.length; i ++) {
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+		map: map, // 마커를 표시할 지도
+		position: coords // 마커를 표시할 위치
+	});
+}
